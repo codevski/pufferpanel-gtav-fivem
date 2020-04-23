@@ -22,7 +22,7 @@
           "commands": [
             "unxz fx.tar.xz",
             "tar --no-same-owner -xf fx.tar -C core",
-            "chmod u+x cor/run.sh",
+            "chmod u+x core/run.sh",
             "git clone https://github.com/citizenfx/cfx-server-data.git core/resources"
           ],
           "type": "command"

@@ -20,9 +20,9 @@
         },
         {
           "commands": [
-            "unxz fx.tar.xz fx.tar",
+            "unxz fx.tar.xz",
             "tar --no-same-owner -xf fx.tar -C core",
-            "chmod u+x server/run.sh",
+            "chmod u+x cor/run.sh",
             "git clone https://github.com/citizenfx/cfx-server-data.git core/resources"
           ],
           "type": "command"

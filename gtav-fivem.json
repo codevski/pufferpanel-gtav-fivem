@@ -24,9 +24,9 @@
             "tar --no-same-owner -xf fx.tar -C core",
             "chmod u+x core/run.sh",
             "git clone https://github.com/citizenfx/cfx-server-data.git core/tmp",
-            "rm -rf core/tmp/.git && rm core/tmp/README.md",
+            "rm -rf core/tmp/.git && rm core/tmp/*.md",
             "pwd",
-            "mv core/tmp/resources/ core/resources",
+            "mv `core/tmp/resources/*` core/resources",
             "rm -rf core/tmp"
           ],
           "type": "command"

@@ -23,7 +23,10 @@
             "unxz fx.tar.xz",
             "tar --no-same-owner -xf fx.tar -C core",
             "chmod u+x core/run.sh",
-            "git clone https://github.com/citizenfx/cfx-server-data.git core/tmp"
+            "git clone https://github.com/citizenfx/cfx-server-data.git core/tmp",
+            "rm -rf core/tmp/.git* && rm core/tmp/README.md",
+            "mv core/tmp/resources/* core/resources",
+            "rm -rf core/tmp"
           ],
           "type": "command"
         },

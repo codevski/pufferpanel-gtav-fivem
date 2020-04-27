@@ -25,7 +25,8 @@
             "chmod u+x core/run.sh",
             "git clone https://github.com/citizenfx/cfx-server-data.git core/tmp",
             "rm -rf core/tmp/.git* && rm core/tmp/README.md",
-            "mv core/tmp/resources/* core/resources",
+            "pwd",
+            "mv core/tmp/resources core/resources",
             "rm -rf core/tmp"
           ],
           "type": "command"
